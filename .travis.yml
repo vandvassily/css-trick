@@ -5,7 +5,7 @@ cache: yarn
 install:
     - yarn
 script:
-    - yarn build
+    - yarn docs:build
 after_success:
     - cd docs/.vuepress/dist
     - git init
