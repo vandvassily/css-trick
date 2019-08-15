@@ -14,3 +14,7 @@ after_success:
     - git add -A
     - git commit -m 'deploy'
     - git push -f "https://${access_token}@${GH_REPO}" master:${DEPLOY_BRANCH}
+
+branches:
+  only:
+    - master
